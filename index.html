@@ -109,6 +109,21 @@
           <div id="warningList" class="warning-list"></div>
         </aside>
       </section>
+
+      <section class="panel approval-panel">
+        <div class="panel-head">
+          <h2>放映签核</h2>
+          <span id="approvalStatus" class="approval-status">未签核</span>
+        </div>
+        <div class="approval-body">
+          <label>
+            签名人
+            <input id="signerInput" type="text" placeholder="接手放映员姓名" />
+          </label>
+          <button id="signBtn" class="primary" type="button">生成签核</button>
+          <div id="approvalInfo" class="approval-info"></div>
+        </div>
+      </section>
     </main>
 
     <script src="app.js"></script>
