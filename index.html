@@ -104,10 +104,26 @@
           <div id="segmentList" class="segment-list"></div>
         </section>
 
-        <aside class="panel warning-panel">
-          <h2>试映前核对</h2>
-          <div id="warningList" class="warning-list"></div>
-        </aside>
+        <div class="side-stack">
+          <aside class="panel warning-panel">
+            <h2>试映前核对</h2>
+            <div id="warningList" class="warning-list"></div>
+          </aside>
+
+          <aside class="panel signoff-panel">
+            <h2>放映签核</h2>
+            <div id="signoffStatus" class="signoff-status"></div>
+            <label>
+              签名人
+              <input id="signerInput" type="text" placeholder="放映员姓名" autocomplete="name" />
+            </label>
+            <div class="signoff-actions">
+              <button id="signoffBtn" class="primary" type="button">生成签核</button>
+              <button id="exportOfficialBtn" type="button">导出正式清单</button>
+            </div>
+            <p class="signoff-hint">签核后增删片段、调整顺序、修改时长或处理结论，都会使当前签核失效，需重新签核。</p>
+          </aside>
+        </div>
       </section>
     </main>
 

@@ -313,6 +313,157 @@ label {
   margin-bottom: 4px;
 }
 
+.warning-item.resolved {
+  border-color: rgba(77, 118, 86, 0.4);
+  background: rgba(77, 118, 86, 0.07);
+}
+
+.warning-resolution {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--red);
+}
+
+.warning-item.resolved .warning-resolution {
+  color: var(--green);
+}
+
+.side-stack {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.segment-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.duration-edit,
+.resolution-edit {
+  flex: 1;
+  min-width: 130px;
+}
+
+.duration-edit input,
+.resolution-edit select {
+  padding: 7px 9px;
+  font-size: 13px;
+}
+
+.signoff-panel > label {
+  margin-top: 12px;
+}
+
+.signoff-state {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf7;
+  padding: 12px;
+}
+
+.signoff-state.valid {
+  border-color: rgba(77, 118, 86, 0.5);
+  background: rgba(77, 118, 86, 0.08);
+}
+
+.signoff-state.stale {
+  border-color: rgba(181, 77, 72, 0.4);
+  background: rgba(181, 77, 72, 0.07);
+}
+
+.signoff-tag {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.signoff-state.valid .signoff-tag {
+  color: var(--green);
+}
+
+.signoff-state.stale .signoff-tag {
+  color: var(--red);
+}
+
+.check-number {
+  font-family: "SFMono-Regular", "Consolas", monospace;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.check-number.struck {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.signoff-state dl {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.signoff-state dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.signoff-state dt {
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.signoff-state dd {
+  margin: 0;
+}
+
+.signoff-state p,
+.signoff-hint,
+.signoff-pending {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.signoff-state p,
+.signoff-hint {
+  color: var(--muted);
+}
+
+.signoff-pending {
+  margin-top: 10px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.signoff-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.signoff-hint {
+  margin-top: 10px;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  border-color: var(--line);
+}
+
 .warning-item span,
 .empty {
   color: var(--muted);
